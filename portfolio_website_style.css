@@ -1,0 +1,231 @@
+body {
+  font-family: "Heebo", sans-serif;
+  /* default text of the page */
+  font-weight: 400;
+  /* default boldness of text */
+  padding-bottom: 5%;
+}
+
+a {
+  text-decoration: none;
+  /* text underline */
+}
+
+/* Nav bar styles start */
+a.navbar-link {
+  color: black;
+  font-size: 1.25rem;
+}
+
+div#navbar-div {
+  display: none;
+  justify-content: flex-end;
+  column-gap: 1.25rem;
+  /* gap along the coloums */
+  padding: 0.625rem 2.5rem;
+  font-weight: 700;
+}
+/* Nav bar styles end */
+
+/* Backdrop styles start*/
+div#backdrop {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  column-gap: 1.5rem;
+  padding: 2% 8%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+img.dp {
+  width: 12.5rem;
+  height: auto;
+}
+
+/* div#backdrop > div {
+  border: 1px solid red;
+} */
+
+/* Backdrop left col style starts */
+div#backdrop-left-col {
+  width: 100%;
+  color: #21243d;
+}
+
+div#backdrop-left-col > h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+div#backdrop-left-col > p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+button#backdrop-left-col-button {
+  background-color: #ff6464;
+  color: white;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 0.6rem 1.25rem;
+  border: 0;
+}
+/* Backdrop left col style ends */
+
+div#backdrop-right-col {
+  width: 100%;
+}
+/* Backdrop styles end*/
+
+/* recent blogs styles start*/
+section#recent-blog-posts-sections {
+  background-color: #edf7fa;
+  padding: 3% 2%;
+}
+
+div#recent-posts-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+}
+
+h4.my-h4 {
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #21243d;
+  margin: 0;
+}
+
+div#card-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+div.card {
+  color: #21243d;
+  font-weight: 400;
+  background-color: white;
+  border-radius: 0.3rem;
+  /* curve the card on corners */
+  padding: 1.25rem 1.35rem;
+}
+
+h2.my_h2 {
+  color: #21243d;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+div.card > span {
+  font-size: 1.1rem;
+  padding: 0.3rem 0.6rem;
+}
+
+div.card > p {
+  font-size: 1rem;
+}
+/* recent blogs styles ends*/
+
+/* featured works styles starts */
+section.featured-works {
+  background-color: white;
+  padding: 4% 8%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+}
+
+div.horizontal-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3%;
+}
+
+span.pill {
+  background-color: #142850;
+  padding: 0.1rem 1rem;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+span.secondary-text {
+  color: #8695a4;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+div.horizontal-card > div > p {
+  color: #21243d;
+  font-size: 1rem;
+}
+
+div.horizontal-card > img {
+  border-radius: 0.4rem;
+}
+/* featured works styles ends */
+
+/* social media links styles starts */
+section#social-media-links {
+  font-size: 2rem;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+section#social-media-links > a {
+  color: #142850;
+}
+/* social media links styles ends */
+
+/* media queries starting */
+@media screen and (min-width: 500px) {
+  div#backdrop {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  div#backdrop-left-col {
+    width: 50%;
+  }
+
+  img.dp {
+    width: 18.75rem;
+    height: auto;
+  }
+
+  div#backdrop-right-col {
+    width: 45%;
+    text-align: center;
+  }
+
+  div#navbar-div {
+    display: flex;
+  }
+
+  div#backdrop-left-col > h1 {
+    font-size: 2.75rem;
+  }
+
+  div#card-container {
+    flex-direction: row;
+    column-gap: 1%;
+  }
+
+  section#recent-blog-posts-sections {
+    padding: 2% 8%;
+  }
+
+  div.horizontal-card {
+    flex-direction: row;
+    column-gap: 1.25rem;
+  }
+}
+/* media queries ending */
